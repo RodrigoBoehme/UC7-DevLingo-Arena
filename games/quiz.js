@@ -18,7 +18,9 @@ function quiz() {
             options:["1) Kitchen","2) Parts&Services","3) Pirate Cove"],
             answer:"3"
         },{
-            question:"sdaskmncmçlamçslmd"
+            question:"Did you like the questions",
+            options:["1)Yes","2)No","3)Maybe?"],
+            answer:"3"
         }
     ];
 

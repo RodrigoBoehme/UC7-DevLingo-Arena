@@ -26,6 +26,8 @@ function detectiveStory() {
         gameState.loseLife();
     }
 
+    
+
     readline.question("\nPress ENTER to continue...");
 
     
