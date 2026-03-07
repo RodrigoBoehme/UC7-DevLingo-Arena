@@ -54,10 +54,10 @@ function fnafAlike(Bd, Fd, Fx, Cd) {
   let energy = 30;
   let door = true;
   let animatronics = [
-    { name: "Bonnie", position: 0, path: 6, level: Bd, canAtk: false },
-    { name: "Freddy", position: 0, path: 8, level: Fd, canAtk: false },
-    { name: "Foxy", position: 0, path: 5, level: Fx, canAtk: false },
-    { name: "Chica", position: 0, path: 6, level: Cd, canAtk: false },
+    { name: "Bonnie", position: 0, path: 5, level: Bd, canAtk: false, rooms:["Stage","Dining Area","Parts & Services","Supply Closet","Corridor","Security Door"]},
+    { name: "Freddy", position: 0, path: 7, level: Fd, canAtk: false ,rooms:["Stage","Dining Area","Restrooms","Kitchen","Restrooms","Kitchen","Corridor","Security Door"]},
+    { name: "Foxy", position: 0, path: 4, level: Fx, canAtk: false ,rooms:["Pirate Cove","Pirate Cove","Pirate Cove","Corridor","Security Door"]},
+    { name: "Chica", position: 0, path: 5, level: Cd, canAtk: false ,rooms:["Stage","Dining Area","Restrooms","Kitchen","Corridor","Security Door"]},
   ];
 
   console.clear();
@@ -75,7 +75,7 @@ function fnafAlike(Bd, Fd, Fx, Cd) {
       case 1:
         if (energy > 0) {
           for (let a = 0; a < animatronics.length; a++) {
-            console.log(animatronics[a].name + " " + animatronics[a].position);
+            console.log(animatronics[a].name + " " + animatronics[a].rooms[animatronics[a].position]);
           }
           energy--;
         } else {
@@ -95,7 +95,7 @@ function fnafAlike(Bd, Fd, Fx, Cd) {
       case 3:
         if (energy > 4) {
           for (let a = 0; a < animatronics.length; a++) {
-            console.log(animatronics[a].name + " " + animatronics[a].position);
+            console.log(animatronics[a].name + " " + animatronics[a].rooms[animatronics[a].position]);
           }
           door = false;
           energy -= 5;
