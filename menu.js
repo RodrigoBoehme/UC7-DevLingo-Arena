@@ -8,7 +8,8 @@ const sentenceBuilder = require('./games/sentenceBuilder');
 const memoryChallenge = require('./games/memoryChallenge');
 const battleRPG = require('./games/battleRPG');
 const detectiveStory = require('./games/detectiveStory');
-const fnafAlikeGame=require("./games/fnaf")
+const fnafAlikeGame=require("./games/fnaf");
+const newGameSmth=require('./games/newGamesmth');
 
 function showMenu() {
 
@@ -30,7 +31,7 @@ function showMenu() {
         console.log("4 - Memory Challenge");
         console.log("5 - Battle RPG");
         console.log("6 - Detective Story");
-        console.log("7 - FNaF alike game")
+        console.log("7 - New Game")
         console.log("0 - Exit");
 
         let option = readline.question("Choose an option: ");
@@ -42,7 +43,8 @@ function showMenu() {
             case "4": memoryChallenge(); break;
             case "5": battleRPG(); break;
             case "6": detectiveStory(); break;
-            case "7":fnafAlikeGame(); break
+            case "7": newGameSmth(); break; 
+            case "8":fnafAlikeGame(); break
             case "0": process.exit();
             default:
                 console.log("Invalid option.");

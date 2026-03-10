@@ -19,7 +19,7 @@ function quiz() {
             answer:"3"
         },{
             question:"Did you like the questions",
-            options:["1)Yes","2)No","3)Maybe?"],
+            options:["1) Yes","2) No","3) No Answer"],
             answer:"3"
         }
     ];

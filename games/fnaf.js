@@ -62,7 +62,7 @@ function fnafAlike(Bd, Fd, Fx, Cd) {
 
   console.clear();
   console.log(
-    "A game inspired in Five nights at Freddys, you have limite \n power only one door to worry and the same 4 animatronics to\n worry about, winning condition you ask? Just survive for 25 rounds",
+    "A game inspired in Five nights at Freddys, you have limited \n power only one door to worry and the same 4 animatronics to\n worry about, winning condition you ask? Just survive for 25 rounds",
   );
   while (true) {
     console.log(

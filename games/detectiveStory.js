@@ -4,6 +4,7 @@ const gameState = require('../gameState');
 function detectiveStory() {
 
     console.log("\nYou are a detective solving a mystery.");
+    //Kids disappeared at a pizzaria
 
     console.log("\nChoose the correct word:");
     console.log("The suspect ____ nervous.");
@@ -26,7 +27,7 @@ function detectiveStory() {
         gameState.loseLife();
     }
 
-    
+    console.log()
 
     readline.question("\nPress ENTER to continue...");
 
